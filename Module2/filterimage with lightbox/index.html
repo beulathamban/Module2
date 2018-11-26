@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<!-- jquery  -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<title>Filtering Images</title>
+<!-- Stylesheet -->
+	<style>
+		.buttons{
+			width: 100%;
+			height: 100px;
+			background: grey;
+			text-align: center;
+			padding: 50px 30px;
+		}
+		.button{
+			width:200px;
+			height:50px;
+			background: darkred;
+			color:white;
+			font-weight: bold;
+			font-size: 30px;
+			text-align: center;
+		}
+		# imageContainer{
+			width: 100%;
+			height: auto;
+
+		}
+
+		.image .bird1details{
+			height: 300px;
+			width : 300px;
+			float : left;
+		}
+
+		.image::after{
+			clear:left;
+		}
+	</style>
+
+	</head>
+	<body>
+
+<!-- buttons for filtering -->
+		<div class="buttons">
+			<button onclick="allImages()" class="button"> All </button>
+			<button onclick="birds()" class="button"> Birds </button>
+			<button onclick="fruits()" class="button"> Fruits </button>
+			<button onclick="flowers()" class="button"> Flowers </button>
+
+		</div>
+
+<!-- display of images -->
+		<div id="imageContainer">
+
+			<img src="image/bird1.jpeg" class="image bird" onclick="details()">
+			<img src="image/flower1.jpeg" class="image flower">
+			<img src="image/fruit1.jpeg" class="image fruit">
+			<img src="image/bird2.jpeg" class="image bird">
+			<img src="image/fruit2.jpeg" class="image fruit">
+			<img src="image/flower2.jpeg" class="image flower">
+		
+		</div>
+
+
+<!-- details for bird1 -->
+		<div class="details">
+			<h1> Bird1 </h1>
+			<img src="image/bird1.jpeg" class="bird1details">
+			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+			
+		</div>
+
+<!-- Javascript -->
+	<script>
+
+
+		$(function(){
+				$(".details").hide();
+  
+			});
+
+//Pure Javascript
+		/*var images=document.getElementsByClassName("image");
+
+		var birdCollection=document.getElementsByClassName("bird");
+		var fruitCollection=document.getElementsByClassName("fruit");
+		var flowerCollection=document.getElementsByClassName("flower");*/
+
+
+//displaying all	
+		function allImages(){
+			$(function(){
+				$(".image").show();
+  
+			});
+		}
+//filtering birds
+		function birds(){
+			$(function(){
+				$(".image").hide();
+  
+			});
+			$(function(){
+				$(".details").hide();
+  
+			});
+			$(function(){
+				$(".bird").show();
+  
+			});
+//Pure Javascript
+			/*var fileNum=1;
+			
+			
+			for (i=0; i <= (birdCollection.length-1); i++) {
+				
+				document.getElementById("imageContainer").innerHTML +=  "<img src='image/bird" + fileNum + ".jpeg'>";
+				console.log(fileNum);
+					fileNum +=1;
+
+				
+			}*/
+		}
+//Filtering fruits*/
+		function fruits(){
+			$(function(){
+				$(".image").hide();
+  
+			});
+			$(function(){
+				$(".details").hide();
+  
+			});
+			$(function(){
+				$(".fruit").show();
+  
+			});
+
+		}
+//Filtering flowers
+		function flowers(){
+			$(function(){
+				$(".image").hide();
+  
+			});
+			$(function(){
+				$(".details").hide();
+  
+			});
+			$(function(){
+				$(".flower").show();
+  
+			});
+
+		}
+//displaying individual item details
+		function details(){
+
+		$(function(){
+				$(".image").hide();
+
+  
+			});
+
+		$(function(){
+				$(".details").show();
+  
+			});
+
+
+		}
+
+	</script>
+	</body>
+	</html>	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

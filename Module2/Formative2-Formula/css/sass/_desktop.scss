@@ -1,0 +1,98 @@
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    
+    .header__nav {
+    	@include myContainer(75%,100px,#403E3E );
+    	
+
+	}
+	
+	.header__nav--list{
+		
+		margin-left:35%;
+		background-color: #403E3E;
+		list-style:none;
+		font-size: 25px;
+		@include myContainer(50%,100px,#403E3E );
+    	
+
+
+
+	}
+	.header__nav--listitem{
+	display:inline;
+	padding: 20px 10%;
+	float:right;
+	
+		
+}
+	.body__images{
+		@include myContainer(80%,2000px,black);
+		margin:auto;
+	
+
+	}
+	/*.body__images--shapes{
+		width:300px;
+		height:300px;
+	}*/
+	.image_cont{
+		width:50%;
+		height:400px;
+		float:left;
+		margin:auto;
+		
+	}
+	#image1, #image2, #image3, #image4, #image5, #image6, #image7, #image8, #image9{
+		width:300px;
+		height:300px;
+		padding: 10px 10px;
+		margin:auto;
+		
+
+}
+.image__label{
+	color:white;
+	font-family: Verdana;
+
+}
+
+	/*@include myImages(300px,300px);
+	padding: 10px 10px;
+	display:block;
+	margin: 13px ;
+	float:left;*/
+
+	
+
+/*	.body__images--shapes::after{
+		clear:left;
+	}*/
+.body__radiobuttons{
+	
+	border: 20px solid transparent;
+
+	border-image: url("../sass/artborder.jpg") 20 round;
+	text-align: center;
+	
+
+}
+.radio {
+margin: 20px;
+padding : 0px 30px;
+font-size: 30px;
+color: white;
+
+
+}
+.border__art {
+    border: 30px solid transparent;
+    padding: 5px;
+    /* -webkit-border-image: url(../images/artborder.jpg) 20% round; /* Safari 3.1-5 */
+    /*-o-border-image: url(../images/artborder.jpg) 20% round; /* Opera 11-12.1 */
+    border-image: url("../sass/artborder.jpg") 20 round; 
+}
+
+
+}

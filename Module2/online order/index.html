@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>JS Objects</title>
+  
+  </head>
+  <body>
+    <header class="header">
+      <h1> Online Order system </h1>
+    </header>
+
+    <div class="menu">
+      <div class="menu__item">
+        <h3 class="menu__heading"> Starter </h3>
+        <ol>
+          <li><pre>Soup                    $11.75              <button onclick="displaySoup()" class="menu__item--button"> Add </button></pre><p class="menu__item--contains"> (Chicken and Mushroom)</p></li>
+          <li><pre>Spring Roll             $ 9.00              <button onclick="displaySroll()" class="menu__item--button"> Add </button></pre><p class="menu__item--contains"> (Vegetables & herbs)</p></li>
+
+        </ol>
+      </div>
+      <div class="menu__item">
+        <h3 class="menu__heading"> Main </h3>
+        <ol>
+          <li><pre>Burger                  $17.50              <button onclick="displayBurger()" class="menu__item--button"> Add </button></pre><p class="menu__item--contains"> (Beef, cheese and Vegetables)</p></li>
+          <li><pre>Chicken & Chips         $19.00              <button onclick="displayCchips()" class="menu__item--button"> Add </button></pre><p class="menu__item--contains"> (Chicken, herbs, Vegetables and potatoe)</p></li>
+
+        </ol>
+
+      </div>
+
+      <div class="menu__item">
+        <h3 class="menu__heading"> Total </h3>
+        <ol>
+          <li id="item1"><pre>                 </pre><p class="menu__item--contains"> </p></li>
+          <li id="item2"><pre>                 </pre><p class="menu__item--contains"> </p></li>
+
+        </ol>
+        <button onclick="displayAmount()" class="menu__item--button"> Amount </button>
+
+      </div>
+       <div >
+        <h1 id="total">  </h1>
+    </div>
+      
+    </div>
+
+   
+  
+
+  <script src="js/script.js"></script>
+
+  
+  </body>
+</html>

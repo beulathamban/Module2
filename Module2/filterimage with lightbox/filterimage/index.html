@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<!-- jquery  -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<title>Filtering Images</title>
+<!-- Stylesheet -->
+	<link rel="stylesheet"  href="style.css">
+
+	</head>
+	<body>
+		<div class='container'>
+<!-- buttons for filtering -->
+		<div class="buttons">
+			<button onclick="allImages()" class="button"> All </button>
+			<button onclick="birds()" class="button"> Birds </button>
+			<button onclick="fruits()" class="button"> Fruits </button>
+			<button onclick="flowers()" class="button"> Flowers </button>
+
+		</div>
+
+<!-- display of images -->
+		<div id="imageContainer">
+
+			<img src="image/bird1.jpeg" class="image bird" onclick="details()">
+			<img src="image/flower1.jpeg" class="image flower" onclick="callModal()">
+			<img src="image/fruit1.jpeg" class="image fruit">
+			<img src="image/bird2.jpeg" class="image bird">
+			<img src="image/fruit2.jpeg" class="image fruit">
+			<img src="image/flower2.jpeg" class="image flower">
+		
+		</div>
+</div>
+<!-- Modal Container -->
+		<div id="modal" >
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modalImages">
+			
+				<img id="flower1" class="images" src="image/flower1.jpeg" >
+				<img id="fruit1" class="images" src="image/fruit1.jpeg" >
+				<img id="bird2" class="images" src="image/bird2.jpeg" >
+				<img id="fruit2" class="images" src="image/fruit2.jpeg" >
+				<img id="flower2" class="images" src="image/flower2.jpeg" >
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	    	<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+
+<!-- details for bird1 -->
+		<div class="details">
+			<h1> Bird1 </h1>
+			<img src="image/bird1.jpeg" class="bird1details">
+			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+			
+		</div>
+
+<!-- Javascript -->
+	<script src="script.js">
+
+
+		
+	</script>
+	</body>
+	</html>	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

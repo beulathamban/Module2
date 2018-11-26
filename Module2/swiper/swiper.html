@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="swiper/dist/css/swiper.min.css">
+
+  <!-- Demo styles -->
+  <style>
+    body {
+      background: #262626;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 400px;
+      height: 500px;
+      background : #fff;
+
+
+    }
+    img{
+      width:400px;
+      height:400px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+   
+      <div class="swiper-slide" >
+        <div class="imgBx">
+          <img src="image/img1.jpg" alt="Image"> 
+        </div>
+
+        <div class="details">
+          <h3> Caption <br> <span>Description</span></h3>
+
+        </div>
+      </div>
+
+      <div class="swiper-slide" >
+        <div class="imgBx">
+          <img src="image/img2.jpg" alt="Image"> 
+        </div>
+
+        <div class="details">
+          <h3> Caption <br> <span>Description</span></h3>
+
+        </div>
+      </div>
+      <div class="swiper-slide" >
+        <div class="imgBx">
+          <img src="image/img3.jpg" alt="Image"> 
+        </div>
+
+        <div class="details">
+          <h3> Caption <br> <span>Description</span></h3>
+
+        </div>
+      </div>
+      <div class="swiper-slide" >
+        <div class="imgBx">
+          <img src="image/img4.jpg" alt="Image"> 
+        </div>
+
+        <div class="details">
+          <h3> Caption <br> <span>Description</span></h3>
+
+        </div>
+      </div>
+      <div class="swiper-slide" >
+        <div class="imgBx">
+          <img src="image/img5.jpg" alt="Image"> 
+        </div>
+
+        <div class="details">
+          <h3> Caption <br> <span>Description</span></h3>
+
+        </div>
+      </div>
+      <div class="swiper-slide" >
+        <div class="imgBx">
+          <img src="image/img6.jpg" alt="Image"> 
+        </div>
+
+        <div class="details">
+          <h3> Caption <br> <span>Description</span></h3>
+
+        </div>
+      </div>
+      <div class="swiper-slide" >
+        <div class="imgBx">
+          <img src="image/img7.jpg" alt="Image"> 
+        </div>
+
+        <div class="details">
+          <h3> Caption <br> <span>Description</span></h3>
+
+        </div>
+      </div>
+      <div class="swiper-slide" >
+        <div class="imgBx">
+          <img src="image/img8.jpg" alt="Image"> 
+        </div>
+
+        <div class="details">
+          <h3> Caption <br> <span>Description</span></h3>
+
+        </div>
+      </div>
+      <div class="swiper-slide" >
+        <div class="imgBx">
+          <img src="image/img9.jpg" alt="Image"> 
+        </div>
+
+        <div class="details">
+          <h3> Caption <br> <span>Description</span></h3>
+
+        </div>
+      </div>
+      <div class="swiper-slide" >
+        <div class="imgBx">
+          <img src="image/img10.jpg" alt="Image"> 
+        </div>
+
+        <div class="details">
+          <h3> Caption <br> <span>Description</span></h3>
+
+        </div>
+      </div>
+      
+
+    </div>
+    
+      
+    </div>
+   
+
+  <!-- Swiper JS -->
+
+<!--   <script src="js/jquery.min.js"></script> -->
+  <script src="swiper/dist/js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+</body>
+</html>

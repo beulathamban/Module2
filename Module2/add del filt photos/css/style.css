@@ -1,0 +1,27 @@
+.product-row{
+    height:35vh;
+}
+
+/*.col{
+	width:100%;
+	background-color: pink;
+}
+.card-deck{
+	width:100%;
+	background-color: red;
+
+}*/
+.myCards{
+	width:25%;
+	height: 400px;
+	float:left;
+	background-color: black;
+}
+.myPhotos{
+	width:100%;
+	height:300px;
+}
+h3, h5, p{
+	color:red;
+	font-weight: bold;
+}

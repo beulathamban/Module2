@@ -1,0 +1,47 @@
+*{
+	box-sizing: border-box;
+}
+.header{
+	@include myContainer(100%,100px,#403E3E );
+	
+}
+.header__logo{
+	width:100px;
+	height:100px;
+}
+.heading{
+	font-family: Monotypecorsiva;
+	color: white;
+	@include myContainer(30%,100px,#403E3E );
+	padding : 2%;
+
+}
+.header__menuicon{
+@extend .header__logo; 
+float:right;
+}
+
+.header__menuicon::after{
+	clear:right;
+}
+.header__nav {
+	background-color: #403E3E;
+
+
+	}
+.header__nav--list {
+	margin-left:35%;
+		background-color: #403E3E;
+		list-style:none;
+		font-size: 25px;
+
+}
+
+.header__nav--link{
+	color:red;
+
+}
+.header__nav--listitem{
+	display:inline;
+	padding: 20px 20%;
+}

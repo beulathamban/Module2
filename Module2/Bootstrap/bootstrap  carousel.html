@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <!-- container -->
+  <div class="container ">
+
+    <!-- Carousel  -->
+    <h2>Carousel Example</h2>   
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol> 
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="image/flower1.jpeg" alt="Flower1" style="width:100%;">
+        </div>
+
+        <div class="item">
+          <img src="image/flower2.jpg" alt="Flower2" style="width:100%;">
+        </div>
+      
+        <div class="item">
+          <img src="image/flower3.jpeg" alt="Flower3" style="width:100%;">
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+       <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a> 
+    </div>
+
+    <!--  jumborton -->
+    <div class="jumbotron">
+      <h1  >Hello World!</h1>
+      <p class="text-nowrap">Resize the browser window to see the effect.</p>
+    </div>
+
+    <p>The columns will automatically stack on top of each other when the screen is less than 768px wide.</p>
+
+    <!-- row -->
+    <div class="row" >
+
+      <!-- column1 with thumbnail and well, responsive circle image  -->
+      <div class="col-sm-6 col-md-4 thumbnail well" ><img src="image/flower2.jpg" class="img-circle img-responsive " style="height:auto; width:100%; "> 
+
+        <!-- caption and uppercase -->
+        <div class="caption text-uppercase">flower in violet is Tulip
+        </div>
+      </div>
+
+      <!-- column2 with large well and thhumbnail, caption capitalized and standing out with lead  -->
+      <div class="col-sm-3 col-md-4 thumbnail well-lg"><img src="image/flower1.jpeg"  style="height:auto; width:100%; ">
+        <div class="caption text-capitalize lead">flower in red is Love
+        </div>
+      </div>
+      <div class="col-sm-3 col-md-4 thumbnail well" ><img src="image/flower2.jpg" class="img-circle img-responsive " style="height:auto; width:100%; "> 
+
+        <!-- caption and uppercase -->
+        <div class="caption text-uppercase">flower in violet is Tulip
+        </div>
+      </div>
+    </div>
+
+    <!-- unordered list -->
+    <ul class="list-unstyled">
+      <li>Apple</li>
+      <li>Android</li>
+    </ul>
+
+    <!-- definition list, definition terms , definition description -->
+    <dl class="dl-horizontal">
+      <dt>Apple</dt><dd>Apple is expensive</dd>
+      <dt>Android</dt><dd>Android is cheaper</dd>
+    </dl>
+
+
+    <!-- table with border, hover effect, responsive and rows with contextual color classes -->
+    <button data-toggle="collapse" data-target="#table"> show table </button>
+    <h1 class="page-header"> Table </h1>
+    <div id="table" class="collapse">
+    <table  class="table table-bordered table-hover table-responsive">
+      <tr class="success">
+        <th>Company</th>
+        <th>Contact</th>
+        <th>Country</th>
+      </tr>
+      <tr>
+        <td>Alfreds Futterkiste</td>
+        <td>Maria Anders</td>
+        <td>Germany</td>
+      </tr>
+      <tr class="warning">
+        <td>Centro comercial Moctezuma</td>
+        <td>Francisco Chang</td>
+        <td>Mexico</td>
+      </tr>
+      <tr>
+        <td>Ernst Handel</td>
+        <td>Roland Mendel</td>
+        <td>Austria</td>
+      </tr>
+      <tr>
+        <td>Island Trading</td>
+        <td>Helen Bennett</td>
+        <td>UK</td>
+      </tr>
+      <tr>
+        <td>Laughing Bacchus Winecellars</td>
+        <td>Yoshi Tannamuri</td>
+        <td>Canada</td>
+      </tr>
+      <tr>
+        <td>Magazzini Alimentari Riuniti</td>
+        <td>Giovanni Rovelli</td>
+        <td>Italy</td>
+      </tr>
+    </table>
+  </div>
+
+
+
+    <!-- alert with contextual colors, links and close icon -->
+
+    <h2>Alerts</h2>
+    <div class="alert alert-success alert-dismissible">
+      <a href="#" class="close" data-dismiss="alert" >&times;</a>
+      <strong>Success!</strong> This alert box shows a <a href="#" class="alert-link">successful information.</a>
+    </div>
+    <div class="alert alert-info">
+      <strong>Info!</strong> This alert box shows a neutral information.
+    </div>
+    <div class="alert alert-warning">
+      <strong>Warning!</strong> This alert box shows a warning.
+    </div>
+    <div class="alert alert-danger">
+      <strong>Danger!</strong> This alert box shows a dangerous message.
+    </div>
+
+
+    <!-- buttons  / btn class has a defined size -->
+    <div class="btn-group">
+      <button>show</button>
+      <button class="btn">hide </button>
+      <button class=" btn-link">link </button>
+      <button class="btn-default"> contact </button>
+
+      <button class="btn btn-success"> home </button>
+      <!-- added search glyphicon -->
+      <button class="btn btn-success btn-lg"> search <span class="glyphicon glyphicon-search"></span></button>
+      <button class="btn btn-success btn-sm"> home </button>
+
+      <button class="btn btn-info btn-block disabled"> home </button>
+      <button class="btn btn-default btn-lg btn-block active"> home </button>
+
+      <!-- drop down buttons -->
+      <div class="btn-group">
+
+        <!-- data-toggle attribute responsible for the action of toggling down the menu -->
+        <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+        Sony 
+
+      <!--   includes the down arrow -->
+
+        <span class="caret"></span></button>
+
+       <!--  dropdown-menu class styles the submenu in a compact manner -->
+        <ul class="dropdown-menu" role="menu" >
+          <li><a href="#">Tablet</a></li>
+          <li><a href="#">Smartphone</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- anchor tags with button group justified  -->
+    <h2 class="page-header"> Button group justified with anchor tags </h2>
+
+    <div class="btn-group btn-group-justified">
+      <a href="#" class="btn btn-primary">Apple</a>
+      <a href="#" class="btn btn-info">Samsung</a>
+      <a href="#" class="btn btn-warning">Sony</a>
+    </div>
+
+    <!--  button group justified with each button wrapped with btn-group class -->
+    <h2 class="page-header"> Button group justified with each button wrapped with btn-group class </h2>
+    <div class="btn-group btn-group-justified">
+      <div class="btn-group">
+        <button type="button" class="btn btn-primary">Apple</button>
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn btn-primary">Samsung</button>
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn btn-primary">Sony</button>
+      </div>
+    </div>
+
+    <!-- when lots of pages are in a website include pagination-->
+    <ul class="pagination">
+      <li><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li class="active"><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+    </ul>
+
+   <!--  breadcrumb is another form of pagination -->
+
+    <ul class="breadcrumb">
+      <li><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li class="active"><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+    </ul>
+
+    <!-- Pager showing previous and next links -->
+    <ul class="pager">
+      <li><a href="#">previous</a></li>
+      <li><a href="#">next</a></li>
+    </ul>
+
+    <!-- tabs displaying different content -->
+    
+    <h2>Dynamic Tabs</h2>
+    <ul class="nav nav-tabs">
+      <li class="active"><a data-toggle="tab" href="#menu1">Menu1</a></li>
+      <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+      <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
+    </ul>
+
+   <!-- tab content -->
+    <div class="tab-content">
+    <div id="menu1" class="tab-pane active">
+      <h4>Menu1 blue</h4>
+      <p style="color:blue;">
+      
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+    <div id="menu2" class="tab-pane">
+      <h4>Menu2 red</h4>
+      <p style="color:red;">
+      
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+    <div id="menu3" class="tab-pane">
+      <h4>Menu3 green</h4>
+      <p style="color:green;">
+
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+  </div>
+
+  <!-- fixed nav bar with left and right align links -->
+  <nav class="nav navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+
+      <div class="navbar-header">
+
+        <!--  nav toggle button is created for smaller screen -->
+        <button  class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span> 
+        </button>
+
+        <a href="#" class="navbar-brand"> Company </a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#"> Link1</a></li>
+          <li ><a href="#"> Link2</a></li>
+          <li ><a href="#"> Link3</a></li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li ><a href="#"> Signin</a></li>
+          <li ><a href="#"> Contact</a></li>
+         
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+    <br/>
+    <br/>
+     <br/>
+    <br/>
+     <br/>
+    <br/>
+     <br/>
+    <br/>
+     <br/>
+    <br/>
+  </div>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

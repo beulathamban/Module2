@@ -1,0 +1,22 @@
+.body__radiobuttons{
+	margin:25px 0;
+	/*padding_top:200px; */
+	@include myContainer(100%,100px,#403E3E);
+	color: white;
+	
+	text-align: center;
+	/*background-color: red;*/
+	/*background-image: url("../sass/artborder.jpg");
+	background-repeat: repeat-x; 
+	background-size: 100%;
+	 background-attachment: fixed;*/
+
+}
+.radio {
+margin: auto;
+padding : 20px 10px;
+font-size: 15px;
+color: white;
+
+
+}

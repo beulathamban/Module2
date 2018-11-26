@@ -1,0 +1,196 @@
+body {
+  background-color: black; }
+
+* {
+  box-sizing: border-box; }
+
+.header {
+  width: 100%;
+  height: 100px;
+  background-color: #403E3E; }
+
+.header__logo, .header__menuicon {
+  width: 100px;
+  height: 100px; }
+
+.heading {
+  font-family: Monotypecorsiva;
+  color: white;
+  width: 30%;
+  height: 100px;
+  background-color: #403E3E;
+  padding: 2%; }
+
+.header__menuicon {
+  float: right; }
+
+.header__menuicon::after {
+  clear: right; }
+
+.header__nav {
+  background-color: #403E3E; }
+
+.header__nav--list {
+  margin-left: 35%;
+  background-color: #403E3E;
+  list-style: none;
+  font-size: 25px; }
+
+.header__nav--link {
+  color: red; }
+
+.header__nav--listitem {
+  display: inline;
+  padding: 20px 20%; }
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .header__nav {
+    width: 75%;
+    height: 100px;
+    background-color: #403E3E; }
+
+  .header__nav--list {
+    margin-left: 35%;
+    background-color: #403E3E;
+    list-style: none;
+    font-size: 25px;
+    width: 50%;
+    height: 100px;
+    background-color: #403E3E; }
+
+  .header__nav--listitem {
+    display: inline;
+    padding: 20px 10%;
+    float: right; }
+
+  .body__images {
+    width: 80%;
+    height: 2000px;
+    background-color: black;
+    margin: auto; }
+
+  /*.body__images--shapes{
+  	width:300px;
+  	height:300px;
+  }*/
+  .image_cont {
+    width: 50%;
+    height: 400px;
+    float: left;
+    margin: auto; }
+
+  #image1, #image2, #image3, #image4, #image5, #image6, #image7, #image8, #image9 {
+    width: 300px;
+    height: 300px;
+    padding: 10px 10px;
+    margin: auto; }
+
+  .image__label {
+    color: white;
+    font-family: Verdana; }
+
+  /*@include myImages(300px,300px);
+  padding: 10px 10px;
+  display:block;
+  margin: 13px ;
+  float:left;*/
+  /*	.body__images--shapes::after{
+  		clear:left;
+  	}*/
+  .body__radiobuttons {
+    border: 20px solid transparent;
+    border-image: url("../sass/artborder.jpg") 20 round;
+    text-align: center; }
+
+  .radio {
+    margin: 20px;
+    padding: 0px 30px;
+    font-size: 30px;
+    color: white; }
+
+  .border__art {
+    border: 30px solid transparent;
+    padding: 5px;
+    /* -webkit-border-image: url(../images/artborder.jpg) 20% round; /* Safari 3.1-5 */
+    /*-o-border-image: url(../images/artborder.jpg) 20% round; /* Opera 11-12.1 */
+    border-image: url("../sass/artborder.jpg") 20 round; } }
+.body__images--shapes {
+  width: 150px;
+  height: 150px;
+  padding: 10px 10px;
+  display: block;
+  margin: 13px;
+  float: left;
+  width: 80%;
+  height: 200px;
+  background-color: black; }
+
+.border__art {
+  border: 10px solid transparent;
+  padding: 5px;
+  /* -webkit-border-image: url(../images/artborder.jpg) 20% round; /* Safari 3.1-5 */
+  /*-o-border-image: url(../images/artborder.jpg) 20% round; /* Opera 11-12.1 */
+  border-image: url("../sass/artborder.jpg") 20 round; }
+
+.image__label {
+  color: white;
+  font-family: Verdana; }
+
+.body__radiobuttons {
+  margin: 25px 0;
+  /*padding_top:200px; */
+  width: 100%;
+  height: 100px;
+  background-color: #403E3E;
+  color: white;
+  text-align: center;
+  /*background-color: red;*/
+  /*background-image: url("../sass/artborder.jpg");
+  background-repeat: repeat-x; 
+  background-size: 100%;
+   background-attachment: fixed;*/ }
+
+.radio {
+  margin: auto;
+  padding: 20px 10px;
+  font-size: 15px;
+  color: white; }
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: white;
+  color: red;
+  /* Fallback color */
+  border: 30px solid transparent;
+  padding: 5px;
+  /* -webkit-border-image: url(../images/artborder.jpg) 20% round; /* Safari 3.1-5 */
+  /*-o-border-image: url(../images/artborder.jpg) 20% round; /* Opera 11-12.1 */
+  border-image: url("../sass/artborder.jpg") 20 round; }
+
+.close {
+  color: red;
+  float: right;
+  font-size: 28px;
+  font-weight: bold; }
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer; }
+
+/*# sourceMappingURL=style.css.map */

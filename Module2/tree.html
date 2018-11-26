@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>tree</title>
+</head>
+<body>
+	<script type="text/javascript">
+		document.write("<h1>my christmas tree </h1>");
+		/*for (i=1; i<=20; i++){
+		for (var j=1; j<=(20-i)+2; j++){
+			document.write("&nbsp");
+		}
+		for (var k=1; k<=i; k++){
+			document.write("*" );
+		}
+		document.write("<br>");
+}
+for (i=1; i<=8; i++) {
+	for (var j=1; j<=16; j++){
+			document.write("&nbsp");
+		}
+	for (k=1; k<=4; k++) {
+		document.write("*");
+	}
+	document.write("<br>");
+}*/
+
+
+ ////Hannahs
+var x = 20; // how many lines/rows
+for (var i = 0; i < x; i ++) { // initialization, condition, update (increment operator)
+   for (var j = x - 1; j > i; j --) { // initialization, condition, update (decrement operator)
+      document.write("&nbsp&nbsp"); // no breaking space
+   }
+   for (var k=0; k<=(i*2); k++) { // initialization, condition, update (increment operator)
+      document.write("*"); // stars
+   }
+   document.write("<br>"); // line breaks
+}
+for (var i = 0; i < 2; i++) { // initialization, condition, update (increment operator)
+    for (var j = 0; j<(x*2)-3; j++) { // initialization, condition, update (increment operator)
+        document.write("&nbsp"); // no breaking space
+    }
+    document.write("**<br>"); // christmas tree trunk
+  }
+
+
+for ( beer=99 ;beer>=1 ;beer--) {//initialization, condition, update (decrement operator)
+			if (beer==1) {
+          	document.write("<pre>1 bottle of beer on the wall, a bottle of beer.</pre> ");
+          	document.write("<pre>Take one down and pass it around, no more bottles of beer on the wall. </pre> <br>");
+          	document.write("<pre>No  more bottles of beer on the wall, no more bottles of beer. </pre> ");
+          	document.write("<pre>Go to the store and buy some more, 99 bottles of beer on the wall. </pre>");
+          	break;
+          }
+          document.write("<pre>" + beer + " bottles of beer on the wall, " + beer + " bottles of beer.</pre>");
+          document.write("<pre>Take one down and pass it around, " + (beer-1) + " bottles of beer on the wall.</pre><br>");
+          
+}
+	</script>
+
+</body>
+</html>

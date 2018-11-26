@@ -1,0 +1,108 @@
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+.buttons{
+			width: 100%;
+			height: 100px;
+			background: grey;
+			text-align: center;
+			padding: 20px 30px;
+		}
+
+.button{
+	width:200px;
+	height:50px;
+	background: darkred;
+	color:white;
+	font-weight: bold;
+	font-size: 30px;
+	text-align: center;
+}
+#imageContainer{
+	width: 80%;
+	height: auto;
+	margin:auto;
+	background:red;
+
+}
+
+.image .bird1details{
+	height: 300px;
+	width : 300px;
+	float : left;
+}
+
+.image::after{
+	clear:left;
+}
+#modal{
+	display: none;
+	width:60%;
+	height:50%;
+	border: 20px solid red;
+	margin:auto;
+	position:relative;
+	z-index:1;
+	left: 0;
+  	top: 0;
+  	overflow:auto;
+  	background: white;
+}
+.close{
+	float:right;
+	color:black;
+	position:absolute;
+	top:10px;
+	right:25px;
+	font-weight:bold;
+	font-size:35px;
+}
+.close::after{
+	clear:right;
+}
+.modalImages{
+	position:relative;
+	margin:auto;
+	width:90%;
+	max-width: 1200px;
+
+
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.images {
+  display: none;
+  width:90%;
+  height: 400px;
+  margin:auto;
+}
+
+
+
+

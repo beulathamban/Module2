@@ -1,0 +1,66 @@
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.2.0/jquery.smooth-scroll.min.js" integrity="sha256-fdhzLBb+vMfwRwZKZPtza9iFcdVtEhrWRHhxSzEy4Ek=" crossorigin="anonymous"></script> -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>title</title>
+  <link rel="stylesheet" href="" type="text/css">
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <style>
+  body{
+  	
+  }
+  #dove {
+    margin-left: 60%;
+  	height:100px; 
+  	width:100px;
+  }
+
+  #sun{
+    height:400px; 
+    width:400px;
+  }
+  section{
+  	width:60%;
+  	margin:auto;
+  }
+
+  </style>
+  </head>
+  <body>
+  	  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  	<section>
+      <div>
+  		 <img id="dove" class="birds" src="dove2.gif" alt="Birds">
+      </div>
+      <div>
+  	   <img id="sun" class="sun" src="sun.png" alt="SUN">
+     </div>
+  	<section>
+
+
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  	
+<script >
+	var $birds = $('.birds');
+	var $sun = $('.sun');
+	var $win = $(window);
+	console.log($win);	$win.on('scroll',function(){
+		//console.log('scrolling');
+		//console.log($win.scrollTop());
+		//var left = $win.Left();
+		var top = $win.scrollTop()/2;
+	//	$birds.css('transform','perspective('+ left +')');
+		$sun.css('transform','rotate(' + top + 'deg)');
+
+	});
+</script>
+  </body>
+</html>

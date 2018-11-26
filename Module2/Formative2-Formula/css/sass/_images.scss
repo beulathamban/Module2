@@ -1,0 +1,22 @@
+.body__images--shapes{
+	@include myImages(150px,150px);
+	padding: 10px 10px;
+	display:block;
+	margin: 13px ;
+	float:left;
+	@include myContainer(80%,200px,black);
+
+
+}
+.border__art {
+    border: 10px solid transparent;
+    padding: 5px;
+    /* -webkit-border-image: url(../images/artborder.jpg) 20% round; /* Safari 3.1-5 */
+    /*-o-border-image: url(../images/artborder.jpg) 20% round; /* Opera 11-12.1 */
+    border-image: url("../sass/artborder.jpg") 20 round; 
+}
+.image__label{
+	color:white;
+	font-family: Verdana;
+
+}

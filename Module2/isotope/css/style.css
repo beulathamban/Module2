@@ -1,0 +1,40 @@
+*{
+        box-sizing: border-box;
+        margin:0;
+        padding:0;
+      }
+        html { overflow-y: scroll; }
+      body {
+      background : black;
+      }
+      .grid-item {
+        width: auto;
+        padding: 10px;
+        margin: 10px;
+        color: white;
+      }
+      .tree {
+        border:5px solid pink;
+      }
+      .living {
+        border:5px solid red;
+      }
+      .beach {
+        border:5px solid white;
+      }
+      h1{
+        font-size: 30px;
+        font-family: Monotypecorsiva;
+        color: pink;
+
+      }
+      .iso {
+        width:50%;
+        padding-bottom: 50px;
+        
+      }
+    
+    .grid{
+      padding-top: 10%;
+    }
+   

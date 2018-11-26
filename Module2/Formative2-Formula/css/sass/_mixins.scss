@@ -1,0 +1,10 @@
+@mixin myContainer($w,$h,$bc) {
+	width:$w;
+	height:$h;
+	background-color:$bc;
+}
+
+@mixin myImages($w,$h) {
+	width: $w;
+	height: $h;
+}

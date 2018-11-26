@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Formula</title>
+  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon"> -->
+ <!--  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=font1|font2|etc" type="text/css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/blitzer/jquery-ui.css">
+  <link rel="stylesheet" href="css/css/style.css" type="text/css">
+  <!-- Latest compiled and minified CSS -->
+
+
+<!-- jQuery library -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+  crossorigin="anonymous"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+
+  </head>
+
+
+
+  <body>
+
+    <!-- Bootstrap container is used -->
+    <div class="container-fluid">
+
+
+    <!--   Header -->
+      <!-- BEM style is used -->
+      <div class="navbar navbar-expand-md bg-dark navbar-dark header">
+        <!-- Brand -->
+      <!--   <img src="images/menu-icon.png" class="header__menuicon"> -->
+        <a class="navbar-brand" href="#"> <img src="images/mathematics.png" class="header__logo"></a>
+
+        <h1 class="heading"> Shapes āhua </h1>
+
+
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar links -->
+
+            <div class="collapse navbar-collapse header__nav" id="collapsibleNavbar">
+              <ul class="navbar-nav header__nav--list">
+                <li class="nav-item header__nav--listitem"><a href="#" class="nav-link header__nav--link"> Circle porohita</a></li>
+                <li class="nav-item header__nav--listitem"><a href="#" class="nav-link header__nav--link"> Square tapawha</a></li>
+                <li class="nav-item header__nav--listitem"><a href="#" class="nav-link header__nav--link"> Rectangle 
+taapiri</a></li>
+              </ul>
+            </div>
+      </div>
+
+
+
+     <!--  Radio Buttons -->
+      <div class="body__radiobuttons">
+        <label for="circle" class="radio"> Circle </label>
+        <input type="radio" name="choice" id="circle" class="radio">
+        <label for="square" class="radio"> Square </label>
+        <input type="radio" name="choice" id="square" class="radio">
+        <label for="rectangle" class="radio"> Rectangle </label>
+        <input type="radio" name="choice" id="rectangle" class="radio">
+        <label for="all" class="radio"> All </label>
+        <input type="radio" name="choice" id="all" class="radio">
+      </div>
+
+<!-- Images -->
+
+      <div class="body__images">
+        
+        <div class="image_cont circle border__art"  >
+          <!-- <img src="images/artborder.jpg"> -->
+        <img src="images/circleofcircles.jpeg" alt="circle of circles" id="image1" class="body__images--shapes body__images--circle">   
+        <h3 class="image__label"> Circle Area   </h3> 
+        <h4 class="image__label"> Pi * r * r </h4>
+        </div>
+
+          <div id="modal" class="modal" title="CircleProperties">
+            <span class="close">&times;</span>
+            <h3> Properties of a circle </h3>
+            <p>  <pre> 
+              <h5>Center:</h5> 
+              A point inside the circle. All points on the circle are equidistant (same distance) from the center point.
+              <h5>Radius:</h5> 
+              The radius is the distance from the center to any point on the circle. It is half the diameter. See Radius of a circle.
+              <h5>Diameter:</h5>
+              The distance across the circle. The length of any chord passing through the center. It is twice the radius. See Diameter of a circle.
+              <h5>Circumference:</h5>
+              The circumference is the distance around the circle. See Circumference of a Circle.
+              <h5>Area:</h5>
+              Strictly speaking a circle is a line, and so has no area. What is usually meant is the area of the region enclosed by the circle. See Area enclosed by a circle.
+              </pre>  </p>
+          </div>
+
+ 
+        <div class="image_cont square border__art" id="">  
+        <img src="images/squaresinsquare.jpeg" alt="squares in square" id="image2" class="body__images--shapes body__images--square">
+        <h3 class="image__label"> Square Perimeter  </h3> 
+        <h4 class="image__label"> 4 * Side </h4>
+        </div>
+
+
+        <div class="image_cont rectangle border__art" id="">
+        <img src="images/greenrectangle.png" alt="green rectangle" id="image3" class="body__images--shapes body__images--rectangle">
+        <h3 class="image__label"> Rectangle Area   </h3> 
+        <h4 class="image__label"> 2 ( L + W) </h4>
+        </div>
+
+
+        <div class="image_cont circle border__art" id="">
+        <img src="images/colourfulcircles.png" alt="colourful circles" id="image4" class="body__images--shapes body__images--circle">
+        <h3 class="image__label"> Circle Circumference   </h3>
+         <h4 class="image__label"> 2 * Pi * r </h4>
+        </div>
+
+
+        <div class="image_cont circle border__art" id="">
+        <img src="images/ballofcircles.png" alt="ball of circles" id="image5" class="body__images--shapes body__images--circle">
+        <h3 class="image__label"> Sphere Volume  </h3>
+         <h4 class="image__label"> 4/3 * Pi * r * r * r </h4>
+        </div>
+
+
+        <div class="image_cont square border__art" id="">
+        <img src="images/squaresquares.png" alt="squares and squares" id="image6" class="body__images--shapes body__images--square">
+        <h3 class="image__label"> Sphere Volume  </h3>
+         <h4 class="image__label"> 4/3 * Pi * r * r * r </h4>
+        </div>
+
+
+        <div class="image_cont rectangle border__art" id="">
+        <img src="images/RECTANGLE.png" alt=" A RECTANGLE" id="image7" class="body__images--shapes body__images--rectangle">
+        <h3 class="image__label"> Sphere Volume  </h3>
+         <h4 class="image__label"> 4/3 * Pi * r * r * r </h4>
+        </div>
+
+
+        <div class="image_cont square border__art" id="">
+        <img src="images/squares.jpeg" alt="Squares" id="image8" class="body__images--shapes body__images--square">
+        <h3 class="image__label"> Sphere Volume  </h3>
+         <h4 class="image__label"> 4/3 * Pi * r * r * r </h4>
+        </div>
+
+
+        <div class="image_cont rectangle border__art" id="">
+        <img src="images/rectangles.jpg" alt="Rectangles" id="image9" class="body__images--shapes body__images--rectangle">
+        <h3 class="image__label"> Sphere Volume  </h3>
+         <h4 class="image__label"> 4/3 * Pi * r * r * r </h4>
+        </div>
+
+
+      </div>
+
+
+    </div>
+  
+
+    <script src="js/script.js"></script>
+  </body>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
